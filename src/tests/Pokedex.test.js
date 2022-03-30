@@ -9,7 +9,7 @@ describe('Testando o componente <Pokedex.js>', () => {
   test('Teste se página contém um heading h2', () => {
     renderWithRouter(<App />);
     const heading = screen.getByRole('heading',
-      { name: /Encountered pokémons/i });
+      { name: /Encountered pokémons/i, level: 2 });
     expect(heading).toBeInTheDocument();
   });
 
@@ -38,8 +38,22 @@ describe('Testando o componente <Pokedex.js>', () => {
     renderWithRouter(<App />);
     const seven = 7;
     const btnFilterPokemon = screen.getAllByTestId('pokemon-type-button');
-    const btnAll = screen.getByRole('button', { name: /all/i });
     expect(btnFilterPokemon).toHaveLength(seven);
+    btnFilterPokemon.forEach((elementBtn) => {
+      expect(elementBtn).toBeInTheDocument();
+    });
+    const btnAll = screen.getByRole('button', { name: /all/i });
     expect(btnAll).toBeInTheDocument();
+    const typePokemon = pokemons.map((pokemon) => pokemon.type);
+    typePokemon.forEach((button) => {
+      const typeBtn = screen.getByRole('button', { name: button });
+      expect(typeBtn).toBeInTheDocument();
+    });
+  });
+  test('Teste se a Pokédex contém um botão para resetar o filtro', () => {
+    renderWithRouter(<App />);
+    const btnAllReset = screen.getByRole('button', { name: /all/i });
+    expect(btnAllReset).toBeInTheDocument();
+    userEvent.click(btnAllReset);
   });
 });
