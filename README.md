@@ -2,13 +2,13 @@
 
   - [Requisitos do projeto](#requisitos-do-projeto)
     - [Lista de requisitos](#lista-de-requisitos)
-      - [1. Teste o componente `<App.js />`](#1-teste-o-componente-appjs-)
-      - [2. Teste o componente `<About.js />`](#2-teste-o-componente-aboutjs-)
-      - [3. Teste o componente `<FavoritePokemons.js />`](#3-teste-o-componente-favoritepokemonsjs-)
-      - [4. Teste o componente `<NotFound.js />`](#4-teste-o-componente-notfoundjs-)
-      - [5. Teste o componente `<Pokedex.js />`](#5-teste-o-componente-pokedexjs-)
-      - [6. Teste o componente `<Pokemon.js />`](#6-teste-o-componente-pokemonjs-)
-      - [7. Teste o componente `<PokemonDetails.js />`](#7-teste-o-componente-pokemondetailsjs-)
+      - [1. Teste do componente `<App.js />`](#1-teste-o-componente-appjs-)
+      - [2. Teste do componente `<About.js />`](#2-teste-o-componente-aboutjs-)
+      - [3. Teste do componente `<FavoritePokemons.js />`](#3-teste-o-componente-favoritepokemonsjs-)
+      - [4. Teste do componente `<NotFound.js />`](#4-teste-o-componente-notfoundjs-)
+      - [5. Teste do componente `<Pokedex.js />`](#5-teste-o-componente-pokedexjs-)
+      - [6. Teste do componente `<Pokemon.js />`](#6-teste-o-componente-pokemonjs-)
+      - [7. Teste do componente `<PokemonDetails.js />`](#7-teste-o-componente-pokemondetailsjs-)
       
 
 # Habilidades
@@ -31,7 +31,7 @@
 Nesse projeto foram feitos testes para uma aplicação React.
 
 
-  - Teste se o topo da aplicação contém um conjunto fixo de links de navegação.
+  - Testa se o topo da aplicação contém um conjunto fixo de links de navegação.
 
     - O primeiro link deve possuir o texto `Home`.
 
@@ -39,13 +39,13 @@ Nesse projeto foram feitos testes para uma aplicação React.
 
     - O terceiro link deve possuir o texto `Favorite Pokémons`.
 
-  - Teste se a aplicação é redirecionada para a página inicial, na URL `/` ao clicar no link `Home` da barra de navegação. 
+  - Testa se a aplicação é redirecionada para a página inicial, na URL `/` ao clicar no link `Home` da barra de navegação. 
 
-  - Teste se a aplicação é redirecionada para a página de `About`, na URL `/about`, ao clicar no link `About` da barra de navegação. 
+  - Testa se a aplicação é redirecionada para a página de `About`, na URL `/about`, ao clicar no link `About` da barra de navegação. 
 
-  - Teste se a aplicação é redirecionada para a página de `Pokémons Favoritados`, na URL `/favorites`, ao clicar no link `Favorite Pokémons` da barra de navegação.
+  - Testa se a aplicação é redirecionada para a página de `Pokémons Favoritados`, na URL `/favorites`, ao clicar no link `Favorite Pokémons` da barra de navegação.
 
-  - Teste se a aplicação é redirecionada para a página `Not Found` ao entrar em uma URL desconhecida.
+  - Testa se a aplicação é redirecionada para a página `Not Found` ao entrar em uma URL desconhecida.
   
   - Se o arquivo teste `App.test.js` contemplam 100% dos casos de uso criados pelo Stryker.
 
